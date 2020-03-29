@@ -1,4 +1,4 @@
-package com.jlbali.dep_inj;
+package com.jlbali.section5.dep_inj;
 
 
 public class BaseballCoach implements Coach {

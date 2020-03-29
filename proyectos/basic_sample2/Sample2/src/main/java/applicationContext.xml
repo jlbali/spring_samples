@@ -11,7 +11,7 @@
     <!--  Place your beans here -->
 
     <bean id="myCoach"
-    	class="com.jlbali.pre_ioc2.TrackCoach">
+    	class="com.jlbali.section5.ioc2.TrackCoach">
     </bean>
     
     

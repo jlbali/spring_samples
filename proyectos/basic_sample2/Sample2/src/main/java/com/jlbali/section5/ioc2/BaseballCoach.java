@@ -1,4 +1,4 @@
-package com.jlbali.pre_ioc2;
+package com.jlbali.section5.ioc2;
 
 
 public class BaseballCoach implements Coach {

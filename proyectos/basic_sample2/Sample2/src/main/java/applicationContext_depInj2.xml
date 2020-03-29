@@ -11,15 +11,20 @@
     <!--  Place your beans here -->
     
     <bean id="myFortuneService"
-    	class="com.jlbali.section5.dep_inj.HappyFortuneService">
+    	class="com.jlbali.section5.dep_inj2.HappyFortuneService">
     </bean>
 
     <bean id="myCoach"
-    	class="com.jlbali.section5.dep_inj.BaseballCoach" >
+    	class="com.jlbali.section5.dep_inj2.BaseballCoach" >
     		<!-- Set up constructor injection -->
     		<constructor-arg ref="myFortuneService" /> 
     </bean>
 
+    <bean id="myCricketCoach"
+    	class="com.jlbali.section5.dep_inj2.CricketCoach" >
+    		<!-- Setter injection -->
+    		<property name="fortuneService" ref="myFortuneService" />
+    </bean>
 
     
 </beans>

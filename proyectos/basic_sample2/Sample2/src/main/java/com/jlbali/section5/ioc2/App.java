@@ -1,8 +1,8 @@
-package com.jlbali.pre_ioc2;
+package com.jlbali.section5.ioc2;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class HelloSpringApp {
+public class App {
 
 	public static void main(String[] args) {
 

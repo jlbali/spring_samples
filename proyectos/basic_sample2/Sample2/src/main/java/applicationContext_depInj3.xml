@@ -11,15 +11,22 @@
     <!--  Place your beans here -->
     
     <bean id="myFortuneService"
-    	class="com.jlbali.section5.dep_inj.HappyFortuneService">
+    	class="com.jlbali.section5.dep_inj3.HappyFortuneService">
     </bean>
 
     <bean id="myCoach"
-    	class="com.jlbali.section5.dep_inj.BaseballCoach" >
+    	class="com.jlbali.section5.dep_inj3.BaseballCoach" >
     		<!-- Set up constructor injection -->
     		<constructor-arg ref="myFortuneService" /> 
     </bean>
 
+    <bean id="myCricketCoach"
+    	class="com.jlbali.section5.dep_inj3.CricketCoach" >
+    		<!-- Setter injection -->
+    		<property name="fortuneService" ref="myFortuneService" />
+    		<property name="emailAddress" value="hola@mail.com" />
+    		<property name="team" value="team1" />
+    </bean>
 
     
 </beans>

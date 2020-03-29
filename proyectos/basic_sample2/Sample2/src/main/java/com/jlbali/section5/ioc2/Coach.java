@@ -1,9 +1,7 @@
-package com.jlbali.dep_inj;
+package com.jlbali.section5.ioc2;
 
 public interface Coach {
 
 	public String getDailyWorkout();
-	
-	public String getDailyFortune();
 	
 }
