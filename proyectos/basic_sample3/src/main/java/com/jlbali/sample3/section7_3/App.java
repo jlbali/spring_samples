@@ -1,9 +1,8 @@
-package com.jlbali.sample3.section7_2;
+package com.jlbali.sample3.section7_3;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-// Example of Java Annotations for Spring Beans.
-// Using default id.
+// Dependency injection with Autowired.
 
 public class App {
 
@@ -15,6 +14,7 @@ public class App {
 		Coach coach = context.getBean("tennisCoach", Coach.class);
 		// Call a method on the bean.
 		System.out.println(coach.getDailyWorkout());
+		System.out.println(coach.getDailyForunte());
 		// close the context.
 		context.close();
 	}

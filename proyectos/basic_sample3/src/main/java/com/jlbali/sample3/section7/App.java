@@ -9,7 +9,7 @@ public class App {
 	public static void main(String[] args) {
 		// read Spring context file.
 		ClassPathXmlApplicationContext context =
-				new ClassPathXmlApplicationContext("applicationContext.xml"); 
+				new ClassPathXmlApplicationContext("applicationContext_7.xml"); 
 		// Get the bean.
 		Coach coach = context.getBean("thatSillyCoach", Coach.class);
 		// Call a method on the bean.
